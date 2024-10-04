@@ -12,7 +12,7 @@ const SingleCharDiv = styled.div<{ strAlcoholic: string }>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 30%;
+    max-width: 40%;
     padding: 2%;
     margin: 1%;
     background-color: ${(props) => (props.strAlcoholic === "Alcoholic" ? 'darkorange' : 'black')};
@@ -21,11 +21,14 @@ const SingleCharDiv = styled.div<{ strAlcoholic: string }>`
     font: italic small-caps bold calc(2px + 1vw) Papyrus, fantasy;
     text-align: center;
     transition: transform 0.3s ease;
+    
 
     &:hover {
-        transform: scale(1.05); /* Slightly enlarges the element on hover */
+        transform: scale(1.05);
+        /* Slightly enlarges the element on hover */
     }
 `;
+
 
 
 export default function Cocktails(props : { data:Cocktail[] } ){

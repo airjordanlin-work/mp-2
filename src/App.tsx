@@ -5,6 +5,7 @@ import {Cocktail} from "./interfaces/CocktailName.ts";
 
 const ParentDiv=styled.div`
     width: 100vw;
+    height: auto;
     margin: auto;
     border: 5px darkgoldenrod solid;
 `;
